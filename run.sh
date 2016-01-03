@@ -1,5 +1,5 @@
 #!/bin/bash
-FOLDER="~/ansible-ubuntu-dev-setup"
+FOLDER="~/sandboxes/ansible-ubuntu-dev-setup"
 ANSIBLE_COMMAND="ansible-playbook $FOLDER/main.yml --ask-sudo-pass"
 
 provistext="
@@ -28,8 +28,8 @@ case "$1" in
             sudo apt-get install ansible -y
             echo "Install GIT"
             sudo apt-get install git -y
-            echo "Clone ubuntu-web-dev-like-a-pro"
-            git clone https://github.com/dieple/ubuntu-ansible-dev-setup.git ubuntu-ansible-dev-setup
+            echo "Clone ansible-ubuntu-dev-setup"
+            git clone https://github.com/dieple/ansible-ubuntu-dev-setup.git ansible-ubuntu-dev-setup
             echo "DONE! All required soft is preinstalled"
             echo "$provistext"
             ;;
