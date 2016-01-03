@@ -55,20 +55,20 @@
   sudo: yes
 
 
-- name: install themes from PPAs
-  apt: name="{{ item }}" state=present
-  with_items:
-    - faenza-icon-theme
-    - faience-icon-theme
-    - zukitwo-theme
-  sudo: yes
+#- name: install themes from PPAs
+#  apt: name="{{ item }}" state=present
+#  with_items:
+#    - faenza-icon-theme
+#    - faience-icon-theme
+#    - zukitwo-theme
+#  sudo: yes
 
-- name: Set Gtk Theme
-  shell: sudo -iu {{ ansible_ssh_user }} gsettings set org.gnome.desktop.interface gtk-theme "Zukitwo"
+#- name: Set Gtk Theme
+#  shell: sudo -iu {{ ansible_ssh_user }} gsettings set org.gnome.desktop.interface gtk-theme "Zukitwo"
 
-- name: Set Icon Theme
-  shell: sudo -iu {{ ansible_ssh_user }} gsettings set org.gnome.desktop.interface icon-theme "Faenza-Dark"
+#- name: Set Icon Theme
+#  shell: sudo -iu {{ ansible_ssh_user }} gsettings set org.gnome.desktop.interface icon-theme "Faenza-Dark"
 
-- name: Set Window Theme
-  shell: sudo -iu {{ ansible_ssh_user }} gsettings set org.gnome.desktop.wm.preferences theme "Zukitwo"
+#- name: Set Window Theme
+#  shell: sudo -iu {{ ansible_ssh_user }} gsettings set org.gnome.desktop.wm.preferences theme "Zukitwo"
 

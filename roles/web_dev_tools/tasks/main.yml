@@ -2,10 +2,10 @@
 - name: ensure web dev tools are installed
   apt: pkg="{{ item }}" state=latest
   with_items:
-    - virtualbox
+#    - virtualbox
     - meld
-    - wireshark
-    - gcolor2
+#    - wireshark
+#    - gcolor2
   sudo: yes
 
 

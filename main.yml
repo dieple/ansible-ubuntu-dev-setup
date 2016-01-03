@@ -4,7 +4,7 @@
   connection: local
   vars:
     hostname: localhost
-    downloadDir: /home/{{ ansible_ssh_user }}/Downloads-Ubuntu-Like-A-Pro
+    downloadDir: /home/{{ ansible_ssh_user }}/ansible-ubuntu-dev-setup-downloads
     installDir: /home/{{ ansible_ssh_user }}/Software
     apacheLocalhostDocumentRoot: /home/{{ ansible_ssh_user }}/www
     downloadThreads: 20

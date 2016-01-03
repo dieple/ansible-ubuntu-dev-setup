@@ -41,9 +41,9 @@
   shell: mkdir -p {{ installDir }}/RubyMine-{{ vRubyMine }} && tar -xf {{ downloadDir }}/RubyMine-{{ vRubyMine }}.tar.gz -C {{ installDir }}/RubyMine-{{ vRubyMine }} --strip-components=1 creates={{ installDir }}/RubyMine-{{ vRubyMine }}
 
 
-- name: Download Brakets
-  shell: aria2c -c -x 10 -s {{ downloadThreads }} https://github.com/adobe/brackets/releases/download/release-1.1/Brackets.Release.1.1.64-bit.deb chdir={{ downloadDir }} creates=Brackets.Release.1.1.64-bit.deb
+#- name: Download Brakets
+#  shell: aria2c -c -x 10 -s {{ downloadThreads }} https://github.com/adobe/brackets/releases/download/release-1.1/Brackets.Release.1.1.64-bit.deb chdir={{ downloadDir }} creates=Brackets.Release.1.1.64-bit.deb
 
-- name: Install Brakets
-  apt: deb={{ downloadDir }}/Brackets.Release.1.1.64-bit.deb
-  sudo: yes
+#- name: Install Brakets
+#  apt: deb={{ downloadDir }}/Brackets.Release.1.1.64-bit.deb
+#  sudo: yes

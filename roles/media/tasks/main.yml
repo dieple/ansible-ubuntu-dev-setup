@@ -29,11 +29,11 @@
     - vlc
     - handbrake-gtk
     - clementine
-    - deadbeef
-    - audio-recorder
-    - simplescreenrecorder
-    - vokoscreen
+#    - deadbeef
+#    - audio-recorder
+#    - simplescreenrecorder
+#    - vokoscreen
     - shutter
-    - gthumb
-    - cr3
+#    - gthumb
+#    - cr3
   sudo: yes

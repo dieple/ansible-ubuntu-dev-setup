@@ -28,10 +28,10 @@
 # TODO : Check this to work properly. Ideally change to check "lspci | grep nvidia -i"
 # maybe like this " result.stdout.find("all systems go") != -1 " ?
 
-- name: install Nvidia drivers
-  apt: pkg=nvidia-current state=latest
-  sudo: yes
-  when: installNvidiaDriver == "yes"
+#- name: install Nvidia drivers
+#  apt: pkg=nvidia-current state=latest
+#  sudo: yes
+#  when: installNvidiaDriver == "yes"
 
 
 - name: add Terra PPA key
@@ -65,12 +65,12 @@
 
 # JAVA INSTALLATION # Also available oracle-java6-installer and oracle-java8-installer
 
-- name: prepare answers for Java7 install wizard
-  debconf: name="oracle-java7-installer" question="shared/accepted-oracle-license-v1-1" value="true" vtype="select"
+- name: prepare answers for Java8 install wizard
+  debconf: name="oracle-java8-installer" question="shared/accepted-oracle-license-v1-1" value="true" vtype="select"
   sudo: yes
 
-- name: install Java7
-  apt: name="oracle-java7-installer" state=present
+- name: install Java8
+  apt: name="oracle-java8-installer" state=present
   sudo: yes
 
 #- include: zsh.yml
